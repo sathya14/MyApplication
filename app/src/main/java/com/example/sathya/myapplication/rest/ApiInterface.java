@@ -1,13 +1,12 @@
 package com.example.sathya.myapplication.rest;
 
-import com.example.sathya.myapplication.model.GetData;
-
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface ApiInterface {
 
     @GET("person_object.json")
-    Call<GetData> getTopRatedMovies();
+    Call<ResponseBody> getTopRatedMovies();
 
 }
